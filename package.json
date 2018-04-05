@@ -4,6 +4,7 @@
     "ripple-bip32": "0.0.3",
     "ripple-keypairs": "^0.10.1",
     "rippled-ws-client": "0.0.6",
-    "rippled-ws-client-sign": "0.0.3"
+    "rippled-ws-client-sign": "0.0.3",
+    "websocket": "^1.0.25"
   }
 }
