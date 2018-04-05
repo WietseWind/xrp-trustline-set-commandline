@@ -8,7 +8,7 @@ Using:
  - [rippled-ws-client-sign](https://www.npmjs.com/package/rippled-ws-client-sign)
  - [ripple-keypairs](https://www.npmjs.com/package/ripple-keypairs)
 
-## Howto
+## First (install node and packages)
 
 Make sure you have nodejs installed on your PC. This is required to run the Javascript-files containing the magic ;)
 
@@ -31,7 +31,34 @@ First, install the required packages:
 npm install
 ```
 
-####NOW EDIT THE SCRIPT YOU WOULD LIKE TO USE (*1) AND RUN IT:
+# Sign and submit (on your own PC)
+
+Select the script you want to use:
+
+ - `online-with-family-seed.js` if you have a `sXXXXX..` secret
+ - `online-with-mnemonic.js` if you have 24 words
+
+The script will connect to `s1.ripple.com`, sign and submit your transaction.
+
+## 1. Edit the script
+
+You should enter your `family seed` (sXXXXX...) aka your "secret" + your account address, or your mnemonic words in the file you want to use.
+
+Edit **online-with-family-seed.js** on:
+
+ - line 4 (family seed, sXXX..)
+ - line 9 (wallet address, rXXX..)
+ - line 10-13 to specify the trust to set
+
+or:
+
+
+Edit **online-with-mnemonic.js.js** on:
+
+ - line 11 (mnemonic words)
+ - line 10-13 to specify the trust to set
+
+## 2. Run the script
 
 ```
 node online-with-family-seed.js
@@ -43,25 +70,6 @@ or
 node online-with-mnemonic.js
 ```
 
-The script will connect to `s1.ripple.com`, sign and submit your transaction.
-
-## *1 Edit the scripts
-
-You should enter your `family seed` (sXXXXX...) aka your "secret" + your account address, or your mnemonic words in the file you want to use.
-
-Edit **online-with-family-seed.js** on:
-
- - line 4 (family seed, sXXX..)
- - line 9 (wallet address, rXXX..)
- - line 10-13 to specify the trust to set
-
-Or:
-
-
-Edit **online-with-mnemonic.js.js** on:
-
- - line 11 (mnemonic words)
- - line 10-13 to specify the trust to set
  
 ## Remove a trust
  
