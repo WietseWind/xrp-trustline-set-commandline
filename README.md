@@ -31,7 +31,7 @@ First, install the required packages:
 npm install
 ```
 
-**NOW EDIT THE SCRIPT YOU WOULD LIKE TO USE (*1) AND RUN IT**
+####NOW EDIT THE SCRIPT YOU WOULD LIKE TO USE (*1) AND RUN IT:
 
 ```
 node online-with-family-seed.js
