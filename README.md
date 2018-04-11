@@ -44,6 +44,8 @@ The script will connect to `s1.ripple.com`, sign and submit your transaction.
 
 You should enter your `family seed` (sXXXXX...) aka your "secret" + your account address, or your mnemonic words in the file you want to use.
 
+Note: When you are using Windows, Notepad won't show newlines. Use [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html)
+
 Edit **online-with-family-seed.js** on:
 
  - line 4 (family seed, sXXX..)
@@ -83,6 +85,8 @@ The script will just sign your transaction and show you the Transaction Blob. Yo
 ## 1. Edit the script
 
 You should enter your `family seed` (sXXXXX...) aka your "secret" + your account address, or your mnemonic words in the file you want to use.
+
+Note: When you are using Windows, Notepad won't show newlines. Use [Notepad++](https://notepad-plus-plus.org/download/v7.5.6.html)
 
 Edit **offline-with-family-seed.js** on:
 
