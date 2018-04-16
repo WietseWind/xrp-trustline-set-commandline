@@ -20,7 +20,7 @@ let mnemonic = 'novel matter final only nice cheese address cradle civil crash g
  */
 let AccountSequence = 123
 
-const seed = bip39.mnemonicToSeed(mnemonic)
+const seed = bip39.mnemonicToSeed(mnemonic) // Note: change the line above to: const seed = bip39.mnemonicToSeed(mnemonic, 'MyPassphrase') ... if you have a BIP39 passphrase.
 const m = bip32.fromSeedBuffer(seed)
 const SeedOrKeypair = m.derivePath("m/44'/144'/0'/0/0").keyPair.getKeyPairs()
 const WalletAddress = ripple.deriveAddress(SeedOrKeypair.publicKey)
