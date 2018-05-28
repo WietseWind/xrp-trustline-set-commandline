@@ -2,6 +2,8 @@
 
 **Using just nodejs on your own computer**
 
+## Video tutorial for Windows users: https://youtu.be/U_bDHgZ0wuc
+
 Using:
 
  - [rippled-ws-client](https://www.npmjs.com/package/rippled-ws-client)
